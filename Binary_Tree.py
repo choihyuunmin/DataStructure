@@ -11,7 +11,6 @@ class NodeManage:
     """
     if data >= Parent Node  -> right
     else data < Parent Node  -> left
-
     """
 
     def __init__(self, head):
