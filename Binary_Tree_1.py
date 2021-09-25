@@ -7,7 +7,7 @@ class Node:
         self.right = None
 
 
-class NodeManage:
+class BinarySearchTree:
     """
     if data >= Parent Node  -> right
     else data < Parent Node  -> left
@@ -127,7 +127,7 @@ if __name__ == "__main__":
         numbers.add(random.randint(0, 999))
         
     head = Node(500)
-    bt = NodeManage(head)
+    bt = BinarySearchTree(head)
     for num in numbers:
         bt.insert(num)
         
