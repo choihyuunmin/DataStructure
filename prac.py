@@ -1,17 +1,7 @@
-test_dic = {'a': {'b': 'c'}, 'd': 'e'}
+from gtts import gTTS
+import os
 
-print(test_dic.keys()) 
-# dict_keys(['a', 'd']) 최상위 key들만 표시됨
-print(test_dic.values())
-
-
-print('a' in test_dic.keys()) # 출력 : True
-print('e' in test_dic.values()) # 출력 : True
-
-# key,value 같이 출력하기
-for key, value in test_dic.items():
-    print(key, value)
-    
- # 출력 : 'd', 'e' (nested dictionary는 출력 안됨)
-
-print(isinstance(1,))
+my_text = '안녕하세요. 최현민입니다.'
+language = 'ko'
+myobj = gTTS(text=my_text, lang=language, slow=False)
+myobj.save('./gtts_test.mp3')
