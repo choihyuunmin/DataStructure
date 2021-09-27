@@ -5,8 +5,7 @@ def bubble_sort(list):
             if list[index2] > list[index2 + 1]:
                 list[index2], list[index2 + 1] = list[index2 + 1], list[index2]
                 swap = True
-                
-        if swap == False:
+        if swap == False:  # swap을 안해도 되면 미리 loop를 빠져나옴
             break  
     return list
         
