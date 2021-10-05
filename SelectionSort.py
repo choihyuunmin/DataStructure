@@ -9,7 +9,6 @@ def selection_sort(list):
 
  
 
-
 import random
 
 data = random.sample(range(100), 10)

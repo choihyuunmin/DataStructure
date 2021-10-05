@@ -11,7 +11,18 @@ def bubble_sort(list):
         
         
         
-        
+
+def bubble_sort2(list):
+    length = len(list) - 1
+    for i in range(length):
+        for j in range(length - i):
+            if list[j] > list[j+1]:
+                list[j], list[j+1] = list[j+1], list[j]
+    return list
+
+
+
+
         
 import random
 data = random.sample(range(100), 50)
