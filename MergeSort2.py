@@ -1,5 +1,4 @@
 import random
-
 def merge_split(data):
     if len(data) <= 1:
         return data
